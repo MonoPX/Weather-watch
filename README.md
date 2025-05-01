@@ -1,70 +1,80 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather Watch
 
-## Available Scripts
+**Weather Watch** is a modern, responsive weather dashboard built using **Next.js 15** and **React 19**, providing real-time weather updates, forecasts, and visual insights in an interactive and user-friendly interface.
 
-In the project directory, you can run:
+![Weather Watch Dashboard](./public/dashboard_screenshot.png)
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Real-time Weather Data:** View current conditions, 5-day forecasts, and air quality information.
+- **Interactive Visualizations:** Analyze temperature trends, humidity levels, wind speed, and more with **Recharts** and **Chart.js**.
+- **Geolocation Support:** Automatically detect user location with IP-based fallback.
+- **Unit Conversion:** Easily toggle between Metric (°C) and Imperial (°F) units.
+- **Global Search:** Search and view weather details for any location worldwide.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+- **Framework:** Next.js 15 (App Router)
+- **Frontend:** React 19, Tailwind CSS, Framer Motion
+- **State Management:** Zustand
+- **Data Visualization:** Recharts, Chart.js
+- **API Integration:** OpenWeather API
+- **Build Tool:** Turbopack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+Follow these steps to run the project locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/kaushik-2318/weather-watch.git
+   cd weather-watch
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set up environment variables:**
 
-### `npm run eject`
+   Create a `.env` file at the root of your project with the following contents:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```env
+   NEXT_PUBLIC_OPENWEATHER_API_URL=https://api.openweathermap.org/data/2.5
+   NEXT_PUBLIC_OPENWEATHER_API_GEO=https://api.openweathermap.org/geo/1.0
+   NEXT_PUBLIC_OPENWEATHER_API_KEY=your_api_key_here
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📚 Learn More
 
-## Learn More
+Here are some useful resources to learn more about the technologies used:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Framer Motion Documentation](https://www.framer.com/motion/)
+- [OpenWeather API Documentation](https://openweathermap.org/api)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 License
 
-### Code Splitting
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+See the [LICENSE](./LICENSE) file for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👨‍💻 Author
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Kaushik Verma**  
+[LinkedIn](https://www.linkedin.com/in/kaushik-verma-2b5515254/) | [Portfolio](https://kaushikverma.me/)
